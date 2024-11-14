@@ -1,10 +1,99 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block title %}
 Каталог
 {% endblock %}
 
 {% block content %}
-    <h2>Товары, пользующиеся спросом</h2>
+    <h2 style="margin-left:250px">Каталог</h2>
+   <p style="margin-left:250px">Категория: Транспорт</p>
+<section class="menu">
+    <h1 style="font-size:20px;  text-align:center">Категории</h1>
+    <ul class="menu_list list">
+        <li class="menu_item item">
+        <a href="#" class="menu_link link">
+            <span>Транспорт</span>
+        </a>
+        </li>
+         <li class="menu_item item">
+        <a href="#" class="menu_link link">
+            <span>Одежда</span>
+        </a>
+        </li>
+         <li class="menu_item item">
+        <a href="#" class="menu_link link">
+            <span>Техника</span>
+        </a>
+        </li>
+    </ul>
+</section>
+
+<div class="body1">
+    <div class="card">
+        <div class="card_top">
+            <a href="#!" class="card_img">
+                <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
+        </div>
+        <div class="card_bottom">
+            <div class="card_prices">
+                2000 руб./сутки
+            </div>
+            <a href="#!" class="card-title">Велосипед</a><br><br>
+            <button class="card_btn">Взять в аренду</button>
+        </div>
+    </div>
+</div>
+
+    <style>
+    .body1{
+    margin-left:250px;
+    margin-top:50px;
+    }
+        .card{
+        width:225px;
+        min-height:280px;
+        box-shadow: 1px 2px 4px black;
+        display:flex;
+        flex-direction:column;
+        border-radius:4px;
+        position:relative;
+        transition:0.2s;
+        }
+        .card-bottom{
+        flex: 1 0 auto;
+        }
+        .card_top{
+        flex: 0 0 220px;
+        }
+        .card_bottom{
+        flex: 1 0 auto:
+        }
+        .card_img{
+        width:100%;
+        height:100%
+        object-fit:contain;
+        transition:0.2s;
+        }
+        .card_img:hover{
+        transform:scale(1.1);
+        }
+       body{
+width:100%;
+min-height:100vh;
+       }
+       .menu{
+       display:flex;
+       flex-direction:column;
+       width:240px;
+       min-height:100vh;
+       position:fixed;
+       top:0;
+       left:0;
+
+       margin-top: 100px;
+       }
+
+    </style>
 {% endblock %}
 
