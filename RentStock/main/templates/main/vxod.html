@@ -1,0 +1,90 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Вход
+{% endblock %}
+
+{% block content %}
+
+<head>
+<!--  <link rel="stylesheet" href="main.style.css">-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<div class="wrapper">
+      <form action="">
+        <h1><font color="#fff">Вход</font></h1>
+        <div class="input-box">
+          <input type="text" placeholder="Username" required>
+          <i class='bx bx-user-circle'></i>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="password" required>
+          <i class='bx bxs-lock-alt'></i>
+        </div>
+        <div class="remember">
+          <label for=""><input type="checkbox">Запомни меня</label>
+          <a href="#">Забыли пароль?</a>
+        </div>
+        <button type="submit" class="btn">Войти</button>
+
+        <div class="register-link">
+          <p>Нет аккаунта? <a href="#">Регистрация</a></p>
+        </div>
+
+      </form>
+</div>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Popins", sans-serif;
+    font-color: white;
+    }
+    .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh
+    width:420px;
+    background: grey;
+    }
+    .wrapper h1{
+    text-align: center;
+    font-color: "#fff";
+    }
+
+    .wrapper .input-box{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+    }
+
+    .wrapper.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px sollid rgb(255,255,255, .2);
+    border-radius: 40px;
+    font-size:16px;
+    color: black;
+    padding: 20px 45px 20px 20px;
+    }
+
+    .input-box input::placeholder{
+    color: black;
+    }
+
+    .wrapper.input-box i{
+    position: adsolute;
+    right: 20px;
+    top: 50%;
+    transforn: translateY(-50%);
+    font-size: 20px;
+    }
+</style>
+
+{% endblock %}

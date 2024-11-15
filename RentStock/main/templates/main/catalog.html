@@ -6,49 +6,122 @@
 {% endblock %}
 
 {% block content %}
-    <h2 style="margin-left:250px">Каталог</h2>
-   <p style="margin-left:250px">Категория: Транспорт</p>
+    <h2 style="margin-left:150px">Каталог</h2>
+   <p style="margin-left:150px">Категория: Транспорт</p>
 <section class="menu">
     <h1 style="font-size:20px;  text-align:center">Категории</h1>
     <ul class="menu_list list">
         <li class="menu_item item">
-        <a href="#" class="menu_link link">
+        <a href="{% url 'catalog' %}" class="menu_link link">
             <span>Транспорт</span>
         </a>
         </li>
          <li class="menu_item item">
-        <a href="#" class="menu_link link">
+        <a href="{% url 'catalog2' %}" class="menu_link link">
             <span>Одежда</span>
         </a>
         </li>
          <li class="menu_item item">
-        <a href="#" class="menu_link link">
+        <a href="{% url 'catalog3' %}" class="menu_link link">
             <span>Техника</span>
         </a>
         </li>
     </ul>
 </section>
 
-<div class="body1">
-    <div class="card">
-        <div class="card_top">
-            <a href="#!" class="card_img">
-                <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
-        </div>
-        <div class="card_bottom">
-            <div class="card_prices">
-                2000 руб./сутки
+<div align="center">
+    <div class="body1" style="float:left">
+        <div class="card">
+            <div class="card_top">
+                <a href="#!" class="card_img">
+                    <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
             </div>
-            <a href="#!" class="card-title">Велосипед</a><br><br>
-            <button class="card_btn">Взять в аренду</button>
+            <div class="card_bottom">
+                <div class="card_prices">2000 руб./сутки</div>
+                <a href="#!" class="card-title">Велосипед</a><br><br>
+                <button class="card_btn">Взять в аренду</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="body1" style="float:left">
+        <div class="card">
+            <div class="card_top">
+                <a href="#!" class="card_img">
+                    <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
+            </div>
+            <div class="card_bottom">
+                <div class="card_prices">2000 руб./сутки</div>
+                <a href="#!" class="card-title">Велосипед</a><br><br>
+                <button class="card_btn">Взять в аренду</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="body1" style="float:left">
+        <div class="card">
+            <div class="card_top">
+                <a href="#!" class="card_img">
+                    <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
+            </div>
+            <div class="card_bottom">
+                <div class="card_prices">2000 руб./сутки</div>
+                <a href="#!" class="card-title">Велосипед</a><br><br>
+                <button class="card_btn">Взять в аренду</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div align="center">
+    <div class="body1" style="float:left">
+        <div class="card">
+            <div class="card_top">
+                <a href="#!" class="card_img">
+                    <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
+            </div>
+            <div class="card_bottom">
+                <div class="card_prices">2000 руб./сутки</div>
+                <a href="#!" class="card-title">Велосипед</a><br><br>
+                <button class="card_btn">Взять в аренду</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="body1" style="float:left">
+        <div class="card">
+            <div class="card_top">
+                <a href="#!" class="card_img">
+                    <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
+            </div>
+            <div class="card_bottom">
+                <div class="card_prices">2000 руб./сутки</div>
+                <a href="#!" class="card-title">Велосипед</a><br><br>
+                <button class="card_btn">Взять в аренду</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="body1" style="float:left">
+        <div class="card">
+            <div class="card_top">
+                <a href="#!" class="card_img">
+                    <img src="{% static "deps/images/velo.png" %}" style="max-width: 223px;></a>
+            </div>
+            <div class="card_bottom">
+                <div class="card_prices">2000 руб./сутки</div>
+                <a href="#!" class="card-title">Велосипед</a><br><br>
+                <button class="card_btn">Взять в аренду</button>
+            </div>
         </div>
     </div>
 </div>
 
     <style>
     .body1{
-    margin-left:250px;
+    margin-left:150px;
     margin-top:50px;
+
     }
         .card{
         width:225px;
@@ -59,6 +132,7 @@
         border-radius:4px;
         position:relative;
         transition:0.2s;
+
         }
         .card-bottom{
         flex: 1 0 auto;
@@ -79,8 +153,8 @@
         transform:scale(1.1);
         }
        body{
-width:100%;
-min-height:100vh;
+        width:100%;
+        min-height:100vh;
        }
        .menu{
        display:flex;
@@ -93,7 +167,14 @@ min-height:100vh;
 
        margin-top: 100px;
        }
-
     </style>
+
+
+
+
+
+
+
+
 {% endblock %}
 

@@ -13,3 +13,14 @@ def catalog(request):
 def profile(request):
     return render(request, 'main/profile.html')
 
+
+def vxod(request):
+    return render(request, 'main/vxod.html')
+
+
+def catalog2(request):
+    return render(request, 'main/catalog2.html')
+
+
+def catalog3(request):
+    return render(request, 'main/catalog3.html')
