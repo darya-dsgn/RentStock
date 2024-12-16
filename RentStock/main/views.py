@@ -18,9 +18,9 @@ def vxod(request):
     return render(request, 'main/vxod.html')
 
 
-def catalog2(request):
-    return render(request, 'main/catalog2.html')
+def catalogod(request):
+    return render(request, 'main/catalogod.html', {})
 
 
-def catalog3(request):
-    return render(request, 'main/catalog3.html')
+def catalogteh(request):
+    return render(request, 'main/catalogteh.html', {})
